@@ -24,14 +24,6 @@ class ShortUrlController extends AbstractController
     public function createShortUrl(Request $request): Response
     {
         try {
-            $token = $request->headers->get('Authorization');
-
-            $isTokenValid = BearerTokenHelper::isBearerTokenValid($token);
-
-            if (!$isTokenValid) {
-                return $this->json(['error' => 'Unauthorized'], Response::HTTP_UNAUTHORIZED);
-            }
-
             $body = json_decode($request->getContent(), true);
 
             $originalUrl = $body['url'] ?? '';
