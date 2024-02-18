@@ -32,6 +32,12 @@ copy .env.example .env
 docker-compose up -d --build
 ```
 
+### 4. Install the dependencies
+
+```bash
+composer install
+```
+
 ## Usage
 
 ### 1. Run the docker container
