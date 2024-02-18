@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Helper\BearerTokenHelper;
 use App\Helper\ValidationHelper;
 use App\Service\ShortUrlService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

@@ -22,7 +22,7 @@ class BearerTokenValidationListener
         $isTokenValid = BearerTokenHelper::isBearerTokenValid($token);
 
         if (!$isTokenValid) {
-            $event->setResponse(new Response('Unauthorized', Response::HTTP_UNAUTHORIZED));
+            $event->setResponse(new Response(json_encode(['error' => 'Unauthorized']), Response::HTTP_UNAUTHORIZED));
         }
     }
 }
