@@ -29,7 +29,7 @@ class ShortUrlController extends AbstractController
             $isTokenValid = BearerTokenHelper::isBearerTokenValid($token);
 
             if (!$isTokenValid) {
-                return $this->json(['message' => 'Unauthorized'], Response::HTTP_UNAUTHORIZED);
+                return $this->json(['error' => 'Unauthorized'], Response::HTTP_UNAUTHORIZED);
             }
 
             $body = json_decode($request->getContent(), true);
