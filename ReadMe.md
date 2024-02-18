@@ -9,7 +9,7 @@ This is a simple URL shortener that takes a long URL and returns a shortened ver
 ### 1. Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/xexumas99/url-shortener.git
 ```
 
 ### 2. Copy the .env file
