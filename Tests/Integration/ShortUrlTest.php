@@ -12,7 +12,7 @@ class ShortUrlTest extends TestCase
     protected function setUp(): void
     {
         $this->client = new \GuzzleHttp\Client();
-        $this->endpoint = 'http://localhost:8000/api/v1/short-urls';
+        $this->endpoint = 'http://localhost/api/v1/short-urls';
 
         parent::setUp();
     }
